@@ -1,0 +1,34 @@
+node_modules
+dist
+.vite
+coverage
+
+# Docs (not for GitHub upload)
+docs/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test / build caches
+.nyc_output/
+.cache/
+*.tsbuildinfo

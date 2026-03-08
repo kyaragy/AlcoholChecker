@@ -1,0 +1,180 @@
+:root {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #10241a;
+  background: linear-gradient(180deg, #effaf2 0%, #d8f0e2 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+h1 {
+  font-size: 1.35rem;
+  margin: 0 0 12px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(16, 36, 26, 0.12);
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.choices {
+  display: grid;
+  gap: 8px;
+}
+
+.radio-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #d3e6db;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.radio-option span {
+  order: 1;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdd5c6;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+input[type='radio'] {
+  order: 2;
+  width: auto;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #40916c;
+  color: #fff;
+}
+
+button.primary {
+  background: #2d6a4f;
+  font-weight: 700;
+}
+
+button.ghost {
+  background: #e7f4ec;
+  color: #1b4332;
+}
+
+.top-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label-title {
+  margin: 4px 0;
+}
+
+.badge {
+  margin: 4px 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.badge.safe {
+  background: #def1e5;
+}
+
+.badge.warn {
+  background: #f7efc6;
+}
+
+.badge.danger {
+  background: #ffdfdf;
+}
+
+.summary,
+.next-action,
+.pace {
+  margin: 6px 0;
+}
+
+.pace.alert {
+  color: #9d0208;
+  font-weight: 700;
+}
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.drink {
+  min-height: 66px;
+  background: #52b788;
+}
+
+.drink.water {
+  grid-column: span 2;
+  background: #1d3557;
+}
+
+.history-list {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 360px) {
+  .actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .actions button:last-child {
+    grid-column: span 2;
+  }
+}
