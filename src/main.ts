@@ -14,10 +14,11 @@ import {
 import type { CurrentSession, SessionHistoryItem, SessionView } from './types/models';
 import { parseDrinkId, renderApp, type RenderState } from './ui/render';
 
-const app = document.querySelector<HTMLDivElement>('#app');
-if (!app) {
+const appElement = document.querySelector<HTMLDivElement>('#app');
+if (!appElement) {
   throw new Error('App root not found');
 }
+const app = appElement;
 
 const state: RenderState = {
   view: loadCurrentSession() ? 'main' : 'setup',

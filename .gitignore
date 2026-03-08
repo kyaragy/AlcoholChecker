@@ -5,6 +5,7 @@ coverage
 
 # Docs (not for GitHub upload)
 docs/
+README.md
 
 # Logs
 *.log
