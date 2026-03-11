@@ -63,9 +63,9 @@ function renderSetup(state: RenderState): string {
         <div class="stack-sm">
           <p class="field-label">今日の目安量</p>
           <div class="choice-grid">
-            <label class="choice-pill"><input type="radio" name="target" value="40"><span>軽め 40g</span></label>
-            <label class="choice-pill"><input type="radio" name="target" value="60" checked><span>普通 60g</span></label>
-            <label class="choice-pill"><input type="radio" name="target" value="80"><span>多め 80g</span></label>
+            <label class="choice-pill"><input type="radio" name="target" value="40"><span class="choice-pill-ui">軽め 40g</span></label>
+            <label class="choice-pill"><input type="radio" name="target" value="60" checked><span class="choice-pill-ui">普通 60g</span></label>
+            <label class="choice-pill"><input type="radio" name="target" value="80"><span class="choice-pill-ui">多め 80g</span></label>
           </div>
           <label class="input-wrap">
             <span>手入力</span>
@@ -76,9 +76,9 @@ function renderSetup(state: RenderState): string {
         <div class="stack-sm">
           <p class="field-label">明日の予定</p>
           <div class="choice-grid choice-grid-3">
-            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="important" checked><span>重要</span></label>
-            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="normal"><span>普通</span></label>
-            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="holiday"><span>休み</span></label>
+            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="important" checked><span class="choice-pill-ui">重要</span></label>
+            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="normal"><span class="choice-pill-ui">普通</span></label>
+            <label class="choice-pill"><input type="radio" name="tomorrowPlan" value="holiday"><span class="choice-pill-ui">休み</span></label>
           </div>
         </div>
 

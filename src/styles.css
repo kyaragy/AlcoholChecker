@@ -188,22 +188,40 @@ h3 {
 }
 
 .choice-pill {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+  display: block;
+}
+
+.choice-pill input[type='radio'] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.choice-pill-ui {
   min-height: 48px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
   background: rgba(15, 23, 42, 0.45);
   padding: 0 12px;
-}
-
-.choice-pill input[type='radio'] {
-  margin: 0;
-}
-
-.choice-pill span {
+  display: grid;
+  place-items: center;
   font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 140ms ease;
+}
+
+.choice-pill input[type='radio']:checked + .choice-pill-ui {
+  color: #08111f;
+  border-color: transparent;
+  background: linear-gradient(135deg, #86efac, #67e8f9);
+}
+
+.choice-pill input[type='radio']:focus-visible + .choice-pill-ui {
+  outline: 2px solid #67e8f9;
+  outline-offset: 2px;
 }
 
 .input-wrap {
